@@ -1,0 +1,23 @@
+{
+  "name": "david-assistant-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "David Costa <davidcostadev@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "env-cmd node dist/script.js",
+    "build": "env-cmd tsc",
+    "dev": "env-cmd ts-node-dev --respawn --transpile-only script.ts"
+  },
+  "dependencies": {
+    "graphql": "^16.8.1",
+    "graphql-request": "^6.1.0",
+    "node-telegram-bot-api": "^0.64.0"
+  },
+  "devDependencies": {
+    "@types/node-telegram-bot-api": "^0.64.2",
+    "env-cmd": "^10.1.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
